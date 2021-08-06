@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../imgs/background.png");
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+p {
+  font-family: "Akaya Telivigala", cursive;
+}
