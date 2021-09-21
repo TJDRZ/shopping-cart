@@ -1,3 +1,8 @@
-# Shopping Cart app created with create-react-app
+# Shopping Cart project for The Odin Project
 
-The goal of this project was to practice using react-router-dom. Site inspired by the restaurant-page project.
+## Created using create-react-app and react-router-dom
+### Inspired by my restaurant-page repo
+
+Main Objectives:
+- First use and practice using react-router-dom
+- Use of React functional components and hooks
