@@ -1,7 +1,7 @@
 body {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
   background-image: url("../imgs/background.png");
 }
 
@@ -11,4 +11,16 @@ button:hover {
 
 p {
   font-family: "Akaya Telivigala", cursive;
+}
+
+@media (max-width: 860px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 10px;
+  }
 }
