@@ -1,7 +1,7 @@
 import { useState } from "react";
+import "../styles/shop.css";
 import Nav from "./Nav";
 import Item from "./Item";
-import "../styles/shop.css";
 
 function Shop() {
   const [totalItems, setTotalItems] = useState(0);
@@ -22,15 +22,15 @@ function Shop() {
   };
 
   return (
-    <div>
+    <main className="Shop">
       <Nav />
-      <div className="shop">
-        <div className="sticky-cart">
+      <section className="shop">
+        <aside className="sticky-cart">
           Total Items: {totalItems}
           <hr />
           Total Price: ${totalPrice}
           <button onClick={checkoutReset}>Checkout</button>
-        </div>
+        </aside>
 
         <Item
           name="Blueberry"
@@ -63,8 +63,8 @@ function Shop() {
           addItems={addTotalItems}
           addPrice={addTotalPrice}
         />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 

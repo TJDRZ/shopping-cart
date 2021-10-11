@@ -1,4 +1,4 @@
-.card {
+.Card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,7 @@
   gap: 0.2rem;
   width: 50%;
   height: 100%;
-  border: ridge black;
+  border: ridge black 2px;
 }
 
 #Blueberry > h1 {

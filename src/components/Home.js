@@ -1,15 +1,19 @@
-import Nav from "./Nav";
-import frenchToast from "../imgs/frenchToast.jpg";
 import "../styles/home.css";
+import Nav from "./Nav";
+import frenchToast from "../assets/frenchToast.jpg";
 
 function Home() {
   return (
-    <div>
+    <main className="Home">
       <Nav />
-      <h1>Pain Perdu</h1>
-      <img className="home-image" src={frenchToast} alt="Not Found" />
-      <p>An extraordinary creation: from our plate, to you.</p>
-    </div>
+      <header className="home-header">
+        <h1 className="home-h1">Pain Perdu</h1>
+        <img className="home-img" src={frenchToast} alt="French Toast" />
+        <p className="home-p">
+          An extraordinary creation: from our plate, to you.
+        </p>
+      </header>
+    </main>
   );
 }
 

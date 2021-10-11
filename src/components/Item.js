@@ -30,14 +30,22 @@ function Item(props) {
   };
 
   return (
-    <div className="card" id={props.name}>
+    <div className="Card" id={props.name}>
       <h1>{props.name}</h1>
       {props.price}
       <p>{props.description}</p>
       <form onSubmit={addToCart}>
-        <button onClick={decrementCount}>-</button>
-        <input type="number" onChange={inputCount} value={count} required />
-        <button onClick={incrementCount}>+</button>
+        <label htmlFor="quantity">
+          <button onClick={decrementCount}>-</button>
+          <input
+            name="quantity"
+            type="number"
+            onChange={inputCount}
+            value={count}
+            required
+          />
+          <button onClick={incrementCount}>+</button>
+        </label>
         <hr />
         <button type="submit">Add to Cart</button>
       </form>

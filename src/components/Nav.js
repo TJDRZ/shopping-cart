@@ -3,13 +3,13 @@ import "../styles/nav.css";
 
 function Nav() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink to="/shopping-cart">Home</NavLink>
+    <nav className="Nav">
+      <ul className="nav-ul">
+        <li className="nav-home">
+          <NavLink className="NavLink" to="/shopping-cart">Home</NavLink>
         </li>
-        <li>
-          <NavLink to="/shop">Shop</NavLink>
+        <li className="nav-shop">
+          <NavLink className="NavLink" to="/shop">Shop</NavLink>
         </li>
       </ul>
     </nav>
