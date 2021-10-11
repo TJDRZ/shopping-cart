@@ -6,27 +6,70 @@
   gap: 0.2rem;
   width: 50%;
   height: 100%;
-  border: ridge black 2px;
+  padding: 1rem;
+  border-bottom: ridge #333 1px;
 }
 
-#Blueberry > h1 {
+@media screen and (max-width: 700px) {
+  .Card {
+    width: 75%;
+  }
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-header > h1 {
+  font-weight: 700;
+}
+
+#Blueberry h1 {
   color: blue;
 }
 
-#Strawberry > h1 {
+#Strawberry h1 {
   color: red;
 }
 
-#Banana > h1 {
+#Banana h1 {
   color: brown;
 }
 
-#Mixed > h1 {
+#Mixed h1 {
   color: purple;
 }
 
-form > * {
-  margin: 0.2rem;
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.card-form-label {
+  display: flex;
+  gap: 1vw;
+}
+
+.form-line {
+  width: 100%;
+  color: cornflowerblue;
+}
+
+.Card button {
+  padding: 1vw;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background-color: cornflowerblue;
+  border: outset #333 1px;
+  border-radius: 0.2rem;
+}
+
+.Card button:hover {
+  box-shadow: 2px 1px #333;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -40,4 +83,5 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
   width: 5rem;
+  text-align: center;
 }

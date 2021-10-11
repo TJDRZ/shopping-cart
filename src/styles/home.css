@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.Home .Nav{
+.Home .Nav {
   flex-basis: 50%;
 }
 
@@ -14,7 +14,8 @@
   height: 100%;
 }
 
-.Home .nav-home, .Home .nav-shop {
+.Home .nav-home,
+.Home .nav-shop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,31 +37,58 @@
   animation-fill-mode: forwards;
 }
 
-.Home .NavLink {
-  font-size: 2rem;
-  color: white;
-}
-
 @keyframes home-fly {
-  0% {transform: translate(0, 0)}
-  10% {transform: translate(2vw, 2vh)}
-  25% {transform: translate(5vw, 5vh)}
-  35% {transform: translate(8vw, 8vh)}
-  50% {transform: translate(10vw, 10vh)}
-  75% {transform: translate(8vw, 8vh)}
-  85% {transform: translate(-2vw, -2vh)}
-  100% {transform: translate(-5vw, -5vh)}
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(2vw, 2vh);
+  }
+  25% {
+    transform: translate(5vw, 5vh);
+  }
+  35% {
+    transform: translate(8vw, 8vh);
+  }
+  50% {
+    transform: translate(10vw, 10vh);
+  }
+  75% {
+    transform: translate(8vw, 8vh);
+  }
+  85% {
+    transform: translate(-2vw, -2vh);
+  }
+  100% {
+    transform: translate(-5vw, -5vh);
+  }
 }
 
 @keyframes shop-fly {
-  0% {transform: translate(0, 0)}
-  10% {transform: translate(2vw, -2vh)}
-  25% {transform: translate(5vw, -5vh)}
-  35% {transform: translate(8vw, -8vh)}
-  50% {transform: translate(10vw, -10vh)}
-  75% {transform: translate(8vw, -8vh)}
-  85% {transform: translate(-2vw, -2vh)}
-  100% {transform: translate(-5vw, 5vh)}
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(2vw, -2vh);
+  }
+  25% {
+    transform: translate(5vw, -5vh);
+  }
+  35% {
+    transform: translate(8vw, -8vh);
+  }
+  50% {
+    transform: translate(10vw, -10vh);
+  }
+  75% {
+    transform: translate(8vw, -8vh);
+  }
+  85% {
+    transform: translate(-2vw, -2vh);
+  }
+  100% {
+    transform: translate(-5vw, 5vh);
+  }
 }
 
 .home-header {

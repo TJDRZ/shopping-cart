@@ -6,10 +6,14 @@ function Nav() {
     <nav className="Nav">
       <ul className="nav-ul">
         <li className="nav-home">
-          <NavLink className="NavLink" to="/shopping-cart">Home</NavLink>
+          <NavLink className="NavLink" to="/shopping-cart">
+            Home
+          </NavLink>
         </li>
         <li className="nav-shop">
-          <NavLink className="NavLink" to="/shop">Shop</NavLink>
+          <NavLink className="NavLink" to="/shop">
+            Shop
+          </NavLink>
         </li>
       </ul>
     </nav>

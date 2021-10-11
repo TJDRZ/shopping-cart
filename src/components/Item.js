@@ -31,11 +31,13 @@ function Item(props) {
 
   return (
     <div className="Card" id={props.name}>
-      <h1>{props.name}</h1>
-      {props.price}
-      <p>{props.description}</p>
-      <form onSubmit={addToCart}>
-        <label htmlFor="quantity">
+      <header className="card-header">
+        <h1>{props.name}</h1>
+        {props.price}
+        <p>{props.description}</p>
+      </header>
+      <form className="card-form" onSubmit={addToCart}>
+        <label className="card-form-label" htmlFor="quantity">
           <button onClick={decrementCount}>-</button>
           <input
             name="quantity"
@@ -46,7 +48,7 @@ function Item(props) {
           />
           <button onClick={incrementCount}>+</button>
         </label>
-        <hr />
+        <hr className="form-line" />
         <button type="submit">Add to Cart</button>
       </form>
     </div>

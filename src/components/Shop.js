@@ -24,12 +24,14 @@ function Shop() {
   return (
     <main className="Shop">
       <Nav />
-      <section className="shop">
+      <section className="shop-container">
         <aside className="sticky-cart">
           Total Items: {totalItems}
-          <hr />
+          <hr className="cart-line" />
           Total Price: ${totalPrice}
-          <button onClick={checkoutReset}>Checkout</button>
+          <button className="checkout-button" onClick={checkoutReset}>
+            Checkout
+          </button>
         </aside>
 
         <Item

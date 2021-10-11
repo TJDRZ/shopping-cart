@@ -3,3 +3,14 @@
   justify-content: space-evenly;
   list-style: none;
 }
+
+.nav-shop,
+.nav-home {
+  padding: 1rem;
+  background-color: cornflowerblue;
+}
+
+.NavLink {
+  font-size: 2rem;
+  color: white;
+}
