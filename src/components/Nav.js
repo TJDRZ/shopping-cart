@@ -5,16 +5,12 @@ function Nav() {
   return (
     <nav className="Nav">
       <ul className="nav-ul">
-        <li className="nav-home">
-          <NavLink className="NavLink" to="/shopping-cart">
-            Home
-          </NavLink>
-        </li>
-        <li className="nav-shop">
-          <NavLink className="NavLink" to="/shop">
-            Shop
-          </NavLink>
-        </li>
+        <NavLink className="NavLink" to="/shopping-cart">
+          <li className="nav-home">Home</li>
+        </NavLink>
+        <NavLink className="NavLink" to="/shop">
+          <li className="nav-shop">Shop</li>
+        </NavLink>
       </ul>
     </nav>
   );
