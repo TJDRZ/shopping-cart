@@ -1,17 +1,17 @@
 import { useState } from "react";
-import "../styles/shop.css";
 import Nav from "./Nav";
 import Item from "./Item";
+import "../styles/shop.css";
 
 function Shop() {
   const [totalItems, setTotalItems] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
 
-  const addTotalItems = (items) => {
+  const addTotalItems = (items: number) => {
     setTotalItems(totalItems + items);
   };
 
-  const addTotalPrice = (price) => {
+  const addTotalPrice = (price: number) => {
     const newTotalPrice = Math.round((totalPrice + price) * 100) / 100;
     setTotalPrice(newTotalPrice);
   };

@@ -1,6 +1,6 @@
-import "../styles/home.css";
 import Nav from "./Nav";
 import frenchToast from "../assets/frenchToast.jpg";
+import "../styles/home.css";
 
 function Home() {
   return (
